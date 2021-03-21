@@ -5,7 +5,7 @@ COPY . .
 RUN npm i
 RUN npm run build
 
-FROM node:14
+FROM node:15-alpine
 ENV NODE_ENV=production
 WORKDIR /app
 
